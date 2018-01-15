@@ -1,0 +1,605 @@
+*,
+*:after,
+*:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	min-height: 150px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.cabecalho{
+	width: 100%;
+	border: 9px solid #2e3192;
+	padding: 5px 20px;
+	background: #fcae1b;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.cabecalhoImg{
+	width: 7%;
+	min-width: 55px;
+}
+.cabecalhoMenu{
+
+}
+@media(max-width: 640px){
+	.cabecalhoMenu{
+		display: none;
+	}
+}
+.cabecalhoMenu-item{
+	font-size: 90%;
+	margin: 0 7px;
+	color: #2e3192;
+	text-decoration: none;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.cabecalho-hamburguer{
+	display: none;
+}
+@media(max-width: 640px){
+	.cabecalho-hamburguer{
+		display: inline;
+	}
+}
+.cabecalho-hamburguer-item{
+	width: 35px;
+	height: 5px;
+	background: #2e3192;
+	margin: 6px 0;
+	border-radius: 10px;
+}
+.conteudo{
+	width: 100%;
+	padding: 0 8% 7% 8%;
+	background: #f26522;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	
+}
+@media(max-width: 640px){
+	.conteudo{
+		padding: 0 8%;
+	}
+}
+.conteudoTitulo{
+	width: 100%;
+	margin: 4%;
+	text-align: center;
+	font-size: 300%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.conteudoM{
+	width: 19%;
+	min-width: 200px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudoM{
+		width: 100%;
+		margin-bottom: 15%;
+		justify-content: space-around;
+	}
+}
+.conteudoM-T{
+	width: 100%;
+	text-align: center;
+	font-size: 200%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.conteudoM-T{
+		display: none;
+	}
+}
+.conteudoM-T-mobile{
+	display: none;
+	width: 100%;
+	font-size: 250%;
+	text-align: left;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.conteudoM-T-mobile{
+		display: inline;
+	}
+}
+@media(max-width: 440px){
+	.conteudoM-T-mobile{
+		font-size: 150%;
+	}
+}
+.conteudoM-link{
+	width: 100%;
+	margin-bottom: 1%;
+}
+@media(max-width: 640px){
+	.conteudoM-link{
+		width: 50%;
+	}
+}
+.conteudoM-caixa{
+	width: 70%;
+}
+@media(max-width: 640px){
+	.conteudoM-caixa{
+		width: 50%;
+		padding-left: 4%;
+	}
+}
+.conteudoM-subtitulo{
+	height: 13%;
+	text-align: left;
+	font-size: 100%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+@media(max-width: 640px){
+	.conteudoM-subtitulo{
+		font-size: 150%;
+	}
+}
+@media(max-width: 440px){
+	.conteudoM-subtitulo{
+		font-size: 90%;
+	}
+}
+.conteudoM-paragrafo{
+	text-align: left;
+	font-size: 100%;
+	color: #fff;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+@media(max-width: 640px){
+	.conteudoM-paragrafo{
+		font-size: 150%;
+	}
+}
+@media(max-width: 440px){
+	.conteudoM-paragrafo{
+		font-size: 90%;
+	}
+}
+.rodape{
+	width: 100%;
+	background: #fff;
+	border: 8px solid #2e3192;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+.cabecalho-rodape{
+	border: 0;
+	border-bottom: 8px solid #2e3192;
+}
+
+.rodapeDados{
+	width: 54%;
+	padding: 6%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.rodapeDados{
+		width: 100%;
+	}
+}
+.rodapeDados-sobre{
+
+}
+.rodapeDados-sobre-paragrafo{
+	font-size: 160%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.rodapeDados-apoio{
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.rodapeDados-apoio-titulo{
+	width: 45%;
+	height: 40%;
+	background: #fcae1b;
+	color: #2e3192;
+	border: 2px solid #2e3192;
+	border-radius: 13px;
+	font-size: 150%;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+@media(max-width: 440px){
+	.rodapeDados-apoio-titulo{
+		font-size: 80%;
+	}
+}
+.rodapeDados-redes{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+.rodapeDados-redes-link{
+	font-size: 150%;
+	color: #2e3192;
+	text-decoration: none;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	margin: 2%;
+}
+@media(max-width: 440px){
+	.rodapeDados-redes-link{
+		font-size: 70%;
+	}
+}
+.rodapeDados-redes-img{
+	height: 7vh;
+}
+.rodape-realizacao{
+	width: 46%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+@media(max-width: 640px){
+	.rodape-realizacao{
+		width: 100%;
+	}
+}
+.rodape-realizacao-caixa{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+@media(max-width: 640px){
+	.rodape-realizacao-caixa{
+		display: none;
+	}
+}
+.rodape-realizacao-paragrafo{
+	width: 100%;
+	font-size: 120%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+}
+.rodape-realizacao-img{
+	width: 30%;
+}
+.rodape-realizacao-img-proa{
+	height: 12vh;
+	margin: 0 10px;
+}
+.rodape-realizacao-img-educap{
+	height: 9vh;
+	margin: 0 10px;
+}
+.rodape-realizacao-img-1sti{
+	height: 9vh;
+	margin: 0 10px;
+}
+.rodape-realizacao-aluno{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.rodape-realizacao-img-alunos{
+	width: 100%;
+}
+.rodape-realizacao-mobile{
+	width: 100%;
+	display: none;
+}
+@media(max-width: 640px){
+	.rodape-realizacao-mobile{
+		padding: 2%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+.rodape-realizacao-paragrafo-mobile{
+	font-size: 120%;
+	color: #000;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	text-align: left;
+}
+@media(max-width: 400px){
+	.rodape-realizacao-paragrafo-mobile{
+		font-size: 90%;
+	}
+}
+.rodape-realizacao-img-mobile{
+	width: 20%;
+}
+.rodape-realizacao-img-proa-mobile{
+	width: 10%;
+}
+.rodape-realizacao-img-educap-mobile{
+	width: 20%;
+}
+.rodape-realizacao-img-1sti-mobile{
+	width: 10%;
+}
+.conteudo-modulo{
+	background: #fff;
+	padding: 0;
+}
+.conteudoTitulo-modulo{
+	width: 100%;
+	margin-top: 2%;
+	text-align: center;
+	font-size: 300%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+.conteudoSubtitulo-modulo{
+	width: 100%;
+	text-align: center;
+	font-size: 150%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+.conteudoImg-modulo{
+	width: 50%;
+	height: 10%;
+	margin: 4%;
+	display: none;
+}
+@media(max-width: 640px){
+	.conteudoImg-modulo{
+		display: inline;
+	}
+}
+.conteudo-informacao{
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudo-informacao{
+		flex-flow: column wrap;
+	}
+}
+.conteudo-informacao-caixa{
+	width: 15%;
+	margin-top: 7%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudo-informacao-caixa{
+		width: 100%;
+	}
+}
+.conteudo-informacao-img{
+	width: 30%;
+	margin: 2%;
+}
+@media(max-width: 640px){
+	.conteudo-informacao-img{
+		width: 20%;
+	}
+}
+.conteudo-informacao-titulo{
+	font-size: 90%;
+	margin: 2%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.conteudo-informacao-titulo{
+		font-size: 150%;
+	}
+}
+.conteudo-informacao-p{
+	font-size: 80%;
+	margin: 2%;
+	color: #f26522;
+	text-align: center;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 100;
+}
+@media(max-width: 640px){
+	.conteudo-informacao-p{
+		font-size: 130%;
+	}
+}
+.conteudo-lateral{
+	width: 35%;
+	margin: 2% 0;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudo-lateral{
+		display: none;
+	}
+}
+.conteudo-lateral-img{
+	width: 70%;
+}
+.conteudo-lateral-titulo{
+	width: 55%;
+	height: 8%;
+	margin-top: 10%;
+	background: #fcae1b;
+	color: #2e3192;
+	border: 4px solid #2e3192;
+	border-radius: 14px;
+	font-size: 140%;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.conteudo-escrito{
+	width: 60%;
+}
+@media(max-width: 640px){
+	.conteudo-escrito{
+		width: 80%;
+	}
+}
+.conteudo-escrito-titulo{
+	width: 100%;
+	margin: 2% 0;
+	text-align: left;
+	font-size: 300%;
+	color: #f26522;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.conteudo-escrito-titulo{
+		font-size: 200%;
+		text-align: center;
+	}
+}
+.conteudo-escrito-paragrafo{
+	font-size: 150%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@media(max-width: 640px){
+	.conteudo-escrito-paragrafo{
+		font-size: 120%;
+		font-weight: 500;
+	}
+}
+.conteudo-sites{
+	width: 100%;
+	margin: 2%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudo-sites{
+		flex-flow: column wrap;
+	}
+}
+.conteudo-sites-caixa{
+	width: 30%;
+	margin-top: 7%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+@media(max-width: 640px){
+	.conteudo-sites-caixa{
+		width: 80%;
+	}
+}
+.conteudo-sites-img{
+	width: 100%;
+}
+.conteudo-sites-titulo{
+	font-size: 150%;
+	margin-top: 2%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@media(max-width: 640px){
+	.conteudo-sites-titulo{
+		margin-top: 5%;
+	}
+}
+.conteudo-sites-paragrafo{
+	font-size: 150%;
+	color: #2e3192;
+	font-family: ministry, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+.conteudo-lateral-fundo{
+	display: none;
+}
+@media(max-width: 640px){
+	.conteudo-lateral-fundo{
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+	}
+}
+@media(max-width: 640px){
+.conteudo-lateral-titulo{
+	width: 45%;
+	height: 60%;
+	margin: 5% 0;
+}
+
+}
